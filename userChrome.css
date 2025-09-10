@@ -1,3 +1,4 @@
+@import url(chrome/colors.css);
 @import url(chrome/tab_close_button_always_on_hover.css);
 @import url(chrome/vertical_context_navigation.css);
 @import url(chrome/floating_findbar_on_top.css);
@@ -51,7 +52,7 @@
 #bookmarks-view,
 #historyTree,
 [lwt-sidebar] {
-  background-color: #2b2a33 !important; /* https://acorn.firefox.com/latest/styles/color-MZHBVuZc#section-background-c2 */
+  background-color: var(--uc-highlight-colour) !important; /* https://acorn.firefox.com/latest/styles/color-MZHBVuZc#section-background-c2 */
 }
 
 #sidebar-box #sidebar-header {
