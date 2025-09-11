@@ -3,7 +3,6 @@
  | C | O | L | O | U | R | S |
  +---+---+---+---+---+---+---*/
 
-/* Color from Catppuccin Macchiato palette */
 
 @media (prefers-color-scheme: dark) { :root {
 
@@ -23,6 +22,8 @@
   --uc-highlight-colour:          #1E2030;
   --uc-inverted-colour:           #CAD3F5;
   --uc-muted-colour:              #6E738D;
+  --uc-deep-colour:               #181926;
+  --uc-selected-colour:           #494D64;
   --uc-accent-colour:             var(--uc-identity-colour-purple);
 
 }}
@@ -46,6 +47,8 @@
   --uc-highlight-colour:          #DCE0E8;
   --uc-inverted-colour:           #4C4F69;
   --uc-muted-colour:              #9CA0B0;
+  --uc-deep-colour:               #DCE0E8;
+  --uc-selected-colour:           #BCC0CC;
   --uc-accent-colour:             var(--uc-identity-colour-purple);
 
 }}
@@ -62,7 +65,10 @@
 :root {
 
   --lwt-frame: var(--uc-base-colour) !important;
-  --lwt-accent-color: var(--lwt-frame) !important;
+  /* Change the default blue accent color in many different elements. */
+  --lwt-accent-color: var(--uc-highlight-colour) !important;
+  /*--lwt-accent-color-inactive: color-mix(in lab, AccentColor 35%, #000000) !important;*/
+  --lwt-accent-color-inactive: color-mix(in lab, var(--lwt-accent-color) 35%, var(--uc-deep-colour)) !important;
   --lwt-text-color: var(--uc-inverted-colour) !important;
 
   --toolbar-field-color: var(--uc-inverted-colour) !important;
@@ -71,6 +77,7 @@
   --toolbar-field-focus-background-color: var(--uc-highlight-colour) !important;
   --toolbar-field-focus-border-color: transparent !important;
 
+  /* Change the textbox background color of the toolbar. URL Search box. */
   --toolbar-field-background-color: var(--lwt-frame) !important;
   --lwt-toolbar-field-highlight: var(--uc-inverted-colour) !important;
   --lwt-toolbar-field-highlight-text: var(--uc-highlight-colour) !important;
@@ -80,6 +87,7 @@
 
   --lwt-selected-tab-background-color: var(--uc-highlight-colour) !important;
 
+  /* Change the background color of just the toolbar. */
   --toolbar-bgcolor: var(--lwt-frame) !important;
   --toolbar-color: var(--lwt-text-color) !important;
   --toolbarseparator-color: var(--uc-accent-colour) !important;
@@ -95,8 +103,10 @@
   --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;
   --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;
 
+  --tab-selected-bgcolor: var(--uc-selected-colour) !important;
+  /* Outline when presing TAB selecting controls. */
+  --focus-outline-color: var(--uc-accent-colour) !important;
 }
-
 
 
 .identity-color-blue      { --identity-tab-color: var(--uc-identity-colour-blue)      !important; --identity-icon-color: var(--uc-identity-colour-blue)      !important;  }
