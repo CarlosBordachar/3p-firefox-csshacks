@@ -1,0 +1,88 @@
+@media (prefers-color-scheme: dark) { :root {
+
+  --uc-ctp-colour-rosewater: #F4DBD6;
+  --uc-ctp-colour-flamingo:  #F0C6C6;
+  --uc-ctp-colour-pink:      #F5BDE6;
+  --uc-ctp-colour-mauve:     #C6A0F6;
+  --uc-ctp-colour-red:       #ED8796;
+  --uc-ctp-colour-maroon:    #EE99A0;
+  --uc-ctp-colour-peach:     #F5A97F;
+  --uc-ctp-colour-yellow:    #EED49F;
+  --uc-ctp-colour-green:     #A6DA95;
+  --uc-ctp-colour-teal:      #8BD5CA;
+  --uc-ctp-colour-sky:       #91D7E3;
+  --uc-ctp-colour-sapphire:  #7DC4E4;
+  --uc-ctp-colour-blue:      #8AADF4;
+  --uc-ctp-colour-lavender:  #B7BDF8;
+  --uc-ctp-colour-text:      #CAD3F5;
+  --uc-ctp-colour-subtext1:  #B8C0E0;
+  --uc-ctp-colour-subtext0:  #A5ADCB;
+  --uc-ctp-colour-overlay2:  #939AB7;
+  --uc-ctp-colour-overlay1:  #8087A2;
+  --uc-ctp-colour-overlay0:  #6E738D;
+  --uc-ctp-colour-surface2:  #5B6078;
+  --uc-ctp-colour-surface1:  #494D64;
+  --uc-ctp-colour-surface0:  #363A4F;
+  --uc-ctp-colour-base:      #24273A;
+  --uc-ctp-colour-mantle:    #1E2030;
+  --uc-ctp-colour-crust:     #181926;
+
+}}
+
+
+@media (prefers-color-scheme: light) { :root {
+
+  --uc-ctp-colour-rosewater: #DC8A78;
+  --uc-ctp-colour-flamingo:  #DD7878;
+  --uc-ctp-colour-pink:      #EA76CB;
+  --uc-ctp-colour-mauve:     #8839EF;
+  --uc-ctp-colour-red:       #D20F39;
+  --uc-ctp-colour-maroon:    #E64553;
+  --uc-ctp-colour-peach:     #FE640B;
+  --uc-ctp-colour-yellow:    #DF8E1D;
+  --uc-ctp-colour-green:     #40A02B;
+  --uc-ctp-colour-teal:      #179299;
+  --uc-ctp-colour-sky:       #04A5E5;
+  --uc-ctp-colour-sapphire:  #209FB5;
+  --uc-ctp-colour-blue:      #1E66F5;
+  --uc-ctp-colour-lavender:  #7287FD;
+  --uc-ctp-colour-text:      #4C4F69;
+  --uc-ctp-colour-subtext1:  #5C5F77;
+  --uc-ctp-colour-subtext0:  #6C6F85;
+  --uc-ctp-colour-overlay2:  #7C7F93;
+  --uc-ctp-colour-overlay1:  #8C8FA1;
+  --uc-ctp-colour-overlay0:  #9CA0B0;
+  --uc-ctp-colour-surface2:  #ACB0BE;
+  --uc-ctp-colour-surface1:  #BCC0CC;
+  --uc-ctp-colour-surface0:  #CCD0DA;
+  --uc-ctp-colour-base:      #EFF1F5;
+  --uc-ctp-colour-mantle:    #E6E9EF;
+  --uc-ctp-colour-crust:     #DCE0E8;
+
+}}
+
+
+:root {
+
+  /* These colours are (mainly) used by the
+     Container Tabs Plugin */
+  --uc-identity-colour-blue:      var(--uc-ctp-colour-blue);
+  --uc-identity-colour-turquoise: var(--uc-ctp-colour-teal);
+  --uc-identity-colour-green:     var(--uc-ctp-colour-green);
+  --uc-identity-colour-yellow:    var(--uc-ctp-colour-yellow);
+  --uc-identity-colour-orange:    var(--uc-ctp-colour-peach);
+  --uc-identity-colour-red:       var(--uc-ctp-colour-red);
+  --uc-identity-colour-pink:      var(--uc-ctp-colour-pink);
+  --uc-identity-colour-purple:    var(--uc-ctp-colour-mauve);
+
+  /*  Cascades main Colour Scheme */
+  --uc-base-colour:               var(--uc-ctp-colour-base);
+  --uc-highlight-colour:          var(--uc-ctp-colour-mantle);
+  --uc-inverted-colour:           var(--uc-ctp-colour-text);
+  --uc-muted-colour:              var(--uc-ctp-colour-overlay0);
+  --uc-deep-colour:               var(--uc-ctp-colour-crust);
+  --uc-selected-colour:           var(--uc-ctp-colour-surface1);
+  --uc-accent-colour:             var(--uc-identity-colour-purple);
+
+}
+

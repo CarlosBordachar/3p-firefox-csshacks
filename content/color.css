@@ -1,0 +1,29 @@
+@import url(../themes/catppuccin_macchiato.css);
+
+:root {
+  
+  --color-accent-primary: var(--uc-accent-colour) !important;
+
+  /* Outline selected pinned page and toggle. */
+  --newtab-primary-action-background: var(--uc-accent-colour) !important;
+  --focus-outline-color: var(--uc-accent-colour)  !important;
+
+  /* Background and hover color on pinned page. */
+  --newtab-background-color: var(--uc-base-colour) !important;
+  --newtab-background-color-secondary: var(--uc-highlight-colour) !important;
+  --newtab-element-hover-color: var(--uc-selected-colour) !important;
+
+  /* Font color name pinned page. */
+  --newtab-text-primary-color: var(--uc-inverted-colour) !important;
+
+  /* Button with option for pinned page. */
+  --newtab-button-background: var(--uc-highlight-colour) !important;
+
+  /* Border window of editing pinned page. */
+  --newtab-border-color: var(--uc-selected-colour) !important;
+
+}
+
+.outer-wrapper {
+  color: var(--newtab-text-primary-color);
+}

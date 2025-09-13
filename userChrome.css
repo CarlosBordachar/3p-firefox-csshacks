@@ -1,4 +1,5 @@
-@import url(chrome/theme/cattpuccin_custom.css);
+/*@import url(chrome/theme/catppuccin_custom.css);*/
+@import url(chrome/color.css);
 @import url(chrome/tab_close_button_always_on_hover.css);
 @import url(chrome/vertical_context_navigation.css);
 @import url(chrome/floating_findbar_on_top.css);
@@ -9,7 +10,6 @@
 @import url(chrome/urlbar_connection_type_background_colors.css);
 
 @import url(chrome/minimal_in-UI_scrollbars.css);
-
 
 /*************************************************/
 /* Apply your custom modifications after imports */
@@ -42,18 +42,8 @@
  * Fix to chrome/minimal_in-UI_scrollbars.css
  * SidePanel History and Bookmarks's scrollbar color
  */
-.panel-subview-body, #permList, scrollbar { color: rgb(94, 94, 94); }
+.panel-subview-body, #permList, scrollbar { scrollbar-color: rgb(94, 94, 94) transparent; }
 
-
-/*
- * Sidebar color
- */
-#sidebar-search-container,
-#bookmarks-view,
-#historyTree,
-[lwt-sidebar] {
-  background-color: var(--uc-highlight-colour) !important; /* https://acorn.firefox.com/latest/styles/color-MZHBVuZc#section-background-c2 */
-}
 
 #sidebar-box #sidebar-header {
   border: none !important;

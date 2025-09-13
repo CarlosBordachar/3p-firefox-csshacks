@@ -1,0 +1,77 @@
+@import url(../themes/catppuccin_macchiato.css);
+
+/*---+---+---+---+---+---+---+
+ | C | O | L | O | U | R | S |
+ +---+---+---+---+---+---+---*/
+
+
+/* Down here I'm just reassigning variables based on the colours set above.
+   Feel free to play around with these but there is no editing necessary below this line. c:
+   */
+
+:root {
+
+  --lwt-frame: var(--uc-base-colour) !important;
+  /* Popup panels */
+  --arrowpanel-background: var(--uc-highlight-colour) !important;
+  --arrowpanel-border-color: var(--uc-selected-colour) !important;
+  --arrowpanel-color: var(--uc-inverted-colour) !important;
+  --arrowpanel-dimmed: var(--uc-selected-colour) !important;
+  /* window and toolbar background */
+  --lwt-accent-color: var(--uc-highlight-colour) !important;
+  --lwt-accent-color-inactive: color-mix(in lab, var(--lwt-accent-color) 35%, var(--uc-deep-colour)) !important;
+  --toolbar-bgcolor: var(--lwt-frame) !important;  
+  /* tabs with system theme - text is not controlled by variable */
+  --tab-selected-bgcolor: var(--uc-selected-colour) !important;
+  /* tabs with any other theme */
+  --lwt-text-color: var(--uc-inverted-colour) !important;
+  --lwt-tab-text: var(--lwt-text-color) !important;
+  --lwt-selected-tab-background-color: var(--tab-selected-bgcolor) !important;
+  /* toolbar area */
+  --toolbar-color: var(--lwt-text-color) !important;
+  --toolbarseparator-color: var(--uc-accent-colour) !important;
+  --toolbarbutton-icon-fill: var(--uc-inverted-colour) !important;
+  --toolbarbutton-hover-background: var(--uc-selected-colour) !important;
+  --toolbarbutton-active-background: var(--lwt-frame) !important;
+  /* urlbar */
+  --toolbar-field-border-color: transparent !important;
+  --toolbar-field-focus-border-color: transparent !important;
+  --lwt-toolbar-field-highlight: var(--uc-inverted-colour) !important;
+  --lwt-toolbar-field-highlight-text: var(--uc-highlight-colour) !important;
+  --urlbar-popup-url-color: var(--uc-accent-colour) !important;
+  /* urlbar Firefox < 92 */
+  --lwt-toolbar-field-background-color: var(--lwt-frame) !important;
+  --lwt-toolbar-field-focus: var(--uc-highlight-colour) !important;
+  --lwt-toolbar-field-color: var(--uc-muted-colour) !important;
+  --lwt-toolbar-field-focus-color: var(--uc-inverted-colour) !important;
+  /* urlbar Firefox 92+ */
+  --toolbar-field-background-color: var(--lwt-frame) !important;
+  --toolbar-field-focus-background-color: var(--uc-highlight-colour) !important;
+  --toolbar-field-color: var(--uc-muted-colour) !important;
+  --toolbar-field-focus-color: var(--uc-inverted-colour) !important;
+/*  --urlbar-box-bgcolor: var(--uc-highlight-colour) !important;*/
+/*  --urlbar-box-text-color: var(--uc-muted-colour) !important;*/
+/*  --urlbar-box-hover-bgcolor: var(--uc-highlight-colour) !important;*/
+/*  --urlbar-box-hover-text-color: var(--uc-inverted-colour) !important;*/
+/*  --urlbar-box-focus-bgcolor: var(--uc-highlight-colour) !important;*/
+  /* sidebar - note the sidebar-box rule for the header-area */
+  --lwt-sidebar-background-color: var(--uc-highlight-colour) !important;
+  --lwt-sidebar-text-color: var(--uc-inverted-colour) !important;
+  /* Outline when presing TAB selecting controls. */
+  --focus-outline-color: var(--uc-accent-colour) !important;
+
+}
+
+/* the header-area of sidebar needs this to work */
+#sidebar-box{ --sidebar-background-color: var(--lwt-frame) !important; }
+
+
+.identity-color-blue      { --identity-tab-color: var(--uc-identity-colour-blue)      !important; --identity-icon-color: var(--uc-identity-colour-blue)      !important; }
+.identity-color-turquoise { --identity-tab-color: var(--uc-identity-colour-turquoise) !important; --identity-icon-color: var(--uc-identity-colour-turquoise) !important; }
+.identity-color-green     { --identity-tab-color: var(--uc-identity-colour-green)     !important; --identity-icon-color: var(--uc-identity-colour-green)     !important; }
+.identity-color-yellow    { --identity-tab-color: var(--uc-identity-colour-yellow)    !important; --identity-icon-color: var(--uc-identity-colour-yellow)    !important; }
+.identity-color-orange    { --identity-tab-color: var(--uc-identity-colour-orange)    !important; --identity-icon-color: var(--uc-identity-colour-orange)    !important; }
+.identity-color-red       { --identity-tab-color: var(--uc-identity-colour-red)       !important; --identity-icon-color: var(--uc-identity-colour-red)       !important; }
+.identity-color-pink      { --identity-tab-color: var(--uc-identity-colour-pink)      !important; --identity-icon-color: var(--uc-identity-colour-pink)      !important; }
+.identity-color-purple    { --identity-tab-color: var(--uc-identity-colour-purple)    !important; --identity-icon-color: var(--uc-identity-colour-purple)    !important; }
+
